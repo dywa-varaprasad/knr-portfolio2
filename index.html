@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="DVP Design - Dywa Varaprasad, Professional Website Developer in Karimnagar, Telangana. Affordable websites for small businesses. Call/WhatsApp: +91 9000266002" />
+  <meta name="keywords"
+    content="website developer karimnagar, web design karimnagar, web developer telangana, affordable website karimnagar, DVP Design, Dywa Varaprasad" />
+  <meta name="author" content="Dywa Varaprasad" />
+  <meta property="og:title" content="DVP Design | Website Developer in Karimnagar" />
+  <meta property="og:description"
+    content="Affordable, professional websites for small businesses in Karimnagar, Telangana." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>DVP Design | Website Developer in Karimnagar, Telangana</title>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+
+  <link rel="stylesheet" href="app.css" />
+
+  <link rel="preload" href="app.css" as="style">
+  <link rel="preload" href="app.js" as="script">
+
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "DVP Design",
+ "address": {
+   "@type": "500001",
+   "addressLocality": "Karimnagar",
+   "addressRegion": "Telangana",
+   "addressCountry": "IN"
+ },
+ "telephone": "+919000266002",
+ "url": "https://yourwebsite.com"
+}
+</script>
+</head>
+
+<body>
+  <!-- ════════════════════════════════════════════
+       FLOATING WHATSAPP BUTTON (always visible)
+  ════════════════════════════════════════════════ -->
+  <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%20need%20a%20website%20for%20my%20business%20in%20Karimnagar!"
+    class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp SVG icon -->
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M16 0C7.163 0 0 7.163 0 16c0 2.824.736 5.474 2.027 7.776L0 32l8.476-2.019A15.936 15.936 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.064 22.12c-.337.95-1.966 1.814-2.716 1.927-.731.112-1.65.159-2.663-.168-.614-.196-1.402-.459-2.408-.9-4.234-1.84-7.003-6.09-7.212-6.374-.208-.283-1.694-2.253-1.694-4.3s1.073-3.055 1.454-3.47c.382-.416.832-.52 1.11-.52.278 0 .555.003.798.013.256.012.599-.097.938.716.337.813 1.148 2.809 1.249 3.012.1.203.168.44.033.714-.134.275-.201.445-.4.685-.2.24-.42.537-.6.721-.2.2-.407.417-.175.817.232.4 1.031 1.7 2.215 2.752 1.523 1.358 2.806 1.778 3.206 1.978.4.2.632.167.866-.1.233-.267.998-1.166 1.265-1.565.267-.4.533-.333.9-.2.367.133 2.332 1.1 2.732 1.3.4.2.665.3.765.466.099.168.099.968-.237 1.916z" />
+    </svg>
+    <span>WhatsApp Me</span>
+  </a>
+
+  <!-- ════════════════════════════════════════════
+       SCROLL TO TOP
+  ════════════════════════════════════════════════ -->
+  <button class="scroll-top" style="color: var(--text)" id="scrollTopBtn" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <!-- ════════════════════════════════════════════
+       HEADER / NAV
+  ════════════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <nav class="nav-inner" role="navigation" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="#hero" class="logo" aria-label="DVP Design Home">
+        <span class="dvp">dvp</span><span class="space"> </span><span class="design">designs</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#why" class="nav-link">Why Local</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li>
+          <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%20want%20a%20website%20quote!"
+            class="nav-link nav-cta" target="_blank" rel="noopener noreferrer">
+            💬 Get Quote
+          </a>
+        </li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 10px">
+        <!-- Theme Toggle -->
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle dark/light mode">
+          🌙
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#why" class="mobile-link">Why Local</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#pricing" class="mobile-link">Pricing</a>
+    <a href="#work" class="mobile-link">Portfolio</a>
+    <a href="#testimonials" class="mobile-link">Reviews</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%20want%20a%20website%20quote!" target="_blank"
+      rel="noopener noreferrer" class="mobile-link" style="color: var(--c4); font-weight: 700">💬 WhatsApp Me</a>
+  </nav>
+
+  <main id="main-content">
+    <!-- ════════════════════════════════════════
+         HERO SECTION
+    ═════════════════════════════════════════════ -->
+
+
+    <section id="hero" aria-label="Introduction">
+      <!-- Background grid -->
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <!-- Glow blobs -->
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-left">
+          <!-- Location tag -->
+          <div class="hero-location" aria-label="Location: Karimnagar, Telangana">
+            📍 Karimnagar, Telangana, India
+          </div>
+
+          <h1 class="hero-title">
+            Your Local<br />
+            <span class="hero-name">Web Developer</span>
+          </h1>
+
+          <p class="hero-sub">
+            I build fast, beautiful websites for
+            <strong>small businesses in Karimnagar</strong>. From shops to
+            clinics to startups — your business deserves a strong online
+            presence. Let's grow together, locally.
+          </p>
+
+          <div class="hero-btns">
+            <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%20need%20a%20website%20for%20my%20business%20in%20Karimnagar!"
+              class="btn-primary" target="_blank" rel="noopener noreferrer">
+              💬 Start on WhatsApp
+            </a>
+            <a href="#pricing" class="btn-ghost">View Pricing →</a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats" aria-label="Key stats">
+            <div class="hero-stat">
+              <div class="hero-stat-num" data-count="10">0</div>
+              <div class="hero-stat-label">Projects Done</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num" data-count="5">0</div>
+              <div class="hero-stat-label">Happy Clients</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num" data-count="3">0</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Identity Card -->
+        <aside class="hero-card reveal-right service-card reveal" aria-label="Developer profile card">
+          <div class="avatar-ring" aria-hidden="true">
+            <div class="">
+              <img class="avatar-ring" src="./dvp.jpg" alt="dvp_developer" />
+            </div>
+          </div>
+          <div class="card-name">Dywa Varaprasad</div>
+          <div class="card-role">Digital Consultant,karimnagar</div>
+          <div class="card-tag">Available for projects</div>
+          <div class="card-skills">
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">GSAP</span>
+            <span class="skill-chip">Bootsrap</span>
+            <span class="skill-chip">Tailwind</span>
+            <span class="skill-chip">three.js</span>
+            <span class="skill-chip">Responsive Design</span>
+
+            <span class="skill-chip">SEO</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         WHY LOCAL SECTION
+    ═════════════════════════════════════════════ -->
+    <section id="why" class="section-pad" aria-label="Why choose a local developer">
+      <div class="container">
+        <div class="badge">Why Local?</div>
+        <h2 class="section-title reveal">
+          Your Business Deserves a<br />
+          <span class="highlight">Karimnagar Developer</span>
+        </h2>
+        <p class="section-sub reveal">
+          I understand the local market, local customers, and local needs.
+          Working with me means faster support, face-to-face meetings, and a
+          website that truly reflects your business.
+        </p>
+
+        <div class="why-grid" role="list">
+          <article class="why-card reveal" role="listitem">
+            <div class="why-icon" aria-hidden="true">🤝</div>
+            <div>
+              <h3>Meet In-Person</h3>
+              <p>
+                No video calls needed. I'm right here in Karimnagar — we can
+                meet at your shop, office, or anywhere convenient.
+              </p>
+            </div>
+          </article>
+
+          <article class="why-card reveal" role="listitem">
+            <div class="why-icon" aria-hidden="true">⚡</div>
+            <div>
+              <h3>Fast Support</h3>
+              <p>
+                Got an issue? Call or WhatsApp me. No wait times, no ticketing
+                systems — just quick, real support.
+              </p>
+            </div>
+          </article>
+
+          <article class="why-card reveal" role="listitem">
+            <div class="why-icon" aria-hidden="true">💰</div>
+            <div>
+              <h3>Affordable Pricing</h3>
+              <p>
+                Packages starting at just ₹4,999 — designed specifically for
+                small businesses with tight budgets.
+              </p>
+            </div>
+          </article>
+
+          <article class="why-card reveal" role="listitem">
+            <div class="why-icon" aria-hidden="true">🌐</div>
+            <div>
+              <h3>Local Market Knowledge</h3>
+              <p>
+                I know what Karimnagar customers search for online. I build
+                sites that attract local buyers and drive footfall.
+              </p>
+            </div>
+          </article>
+
+          <article class="why-card reveal" role="listitem">
+            <div class="why-icon" aria-hidden="true">📱</div>
+            <div>
+              <h3>Mobile-First Design</h3>
+              <p>
+                90% of your customers will visit on a phone. Every site I
+                build looks and works perfectly on mobile.
+              </p>
+            </div>
+          </article>
+
+          <article class="why-card reveal" role="listitem">
+            <div class="why-icon" aria-hidden="true">🔍</div>
+            <div>
+              <h3>Google-Friendly (SEO)</h3>
+              <p>
+                Your site will be built to rank on Google so customers in
+                Karimnagar can actually find you online.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         SERVICES SECTION
+    ═════════════════════════════════════════════ -->
+    <section id="services" class="section-pad" aria-label="Services offered">
+      <div class="container">
+        <div class="badge">Services</div>
+        <h2 class="section-title reveal">
+          What I Build <span class="highlight">For You</span>
+        </h2>
+        <p class="section-sub reveal">
+          Everything your small business needs to stand out online — all in
+          one place, right here in Karimnagar.
+        </p>
+
+        <div class="services-grid" role="list">
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">🏪</div>
+            <h3>Business Websites</h3>
+            <p>
+              Professional, fast websites for shops, restaurants, clinics, and
+              offices that attract customers and build trust.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">5 Pages</span>
+              <span class="service-tag">Mobile Ready</span>
+              <span class="service-tag">WhatsApp Button</span>
+            </div>
+          </article>
+
+
+
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">📋</div>
+            <h3>Landing Pages</h3>
+            <p>
+              One powerful page built to convert visitors into customers —
+              perfect for promotions, new products, or services.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">High Converting</span>
+              <span class="service-tag">Fast Loading</span>
+              <span class="service-tag">Lead Capture</span>
+            </div>
+          </article>
+
+
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">🔧</div>
+            <h3>Website Maintenance</h3>
+            <p>
+              Monthly updates, security checks, content changes, and
+              performance monitoring. Your site stays fast and fresh.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Monthly Updates</span>
+              <span class="service-tag">Backups</span>
+              <span class="service-tag">Speed Checks</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">♻️</div>
+            <h3>Website Redesign</h3>
+            <p>
+              Old, slow, or outdated site? I'll redesign it to look modern,
+              load faster, and work great on every device.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Modern Design</span>
+              <span class="service-tag">Speed Boost</span>
+              <span class="service-tag">Content Migration</span>
+            </div>
+          </article>
+
+
+
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">🔍</div>
+            <h3>Local SEO Setup</h3>
+            <p>
+              I help your business rank on Google Maps and local search so
+              customers in Karimnagar can find you easily.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Google My Business</span>
+              <span class="service-tag">Local Keywords</span>
+              <span class="service-tag">Maps Listing</span>
+            </div>
+          </article>
+
+
+
+
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">🏬</div>
+            <h3>Online store </h3>
+            <p>
+              online stores using custom code buit with backend, and shopify built to convert visitors into customers,
+              new products, or services.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">custom built</span>
+              <span class="service-tag">shopify</span>
+              <span class="service-tag">full stack tools</span>
+            </div>
+          </article>
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         PRICING SECTION
+    ═════════════════════════════════════════════ -->
+    <section id="pricing" class="section-pad" aria-label="Pricing plans">
+      <div class="container">
+        <div class="badge">Pricing</div>
+        <h2 class="section-title reveal">
+          Simple, Honest <span class="highlight">Pricing</span>
+        </h2>
+        <p class="section-sub reveal">
+          No hidden fees. No confusing packages. Just straightforward pricing
+          for Karimnagar small businesses.
+        </p>
+
+        <div class="pricing-note reveal" role="note">
+          💡 All prices are
+          <span>one-time payments, Domain &amp; hosting charges are separate(
+            ₹3,000/year).</span>
+          <span>Free consultation</span> before you decide!
+        </div>
+
+        <div class="pricing-grid" role="list">
+          <!-- STARTER -->
+          <article class="pricing-card reveal" role="listitem" aria-label="Starter plan">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price cyan">
+              <span class="currency">₹</span>4,999
+            </div>
+            <div class="plan-billing">One-time payment</div>
+            <div class="plan-divider"></div>
+            <p style="
+                  font-size: 13px;
+                  color: var(--text2);
+                  margin-bottom: 20px;
+                ">
+              Perfect for shops, freelancers &amp; startups who need a simple
+              online presence.
+            </p>
+            <ul class="plan-features" role="list">
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> single Page
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Mobile
+                Responsive Design
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> WhatsApp
+                Contact Button
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> 15 days Free
+                Support
+              </li>
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">❌</span>
+                <span class="na">
+                  SEO Setup
+                </span>
+
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">❌</span>
+                <span class="na">
+                  Contact Form
+                </span>
+
+              </li>
+              <li class="plan-feature">
+
+                <span class="cross" aria-hidden="true">❌</span>
+                <span class="na">Online Store / Payments</span>
+              </li>
+              <li class="plan-feature">
+                <span class="cross" aria-hidden="true">❌</span>
+                <span class="na">Logo Design</span>
+              </li>
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true"> ❌</span>
+                <span class="na"> Google Maps</span>
+
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">❌</span>
+
+                <span class="na">
+                  Animations
+                </span>
+
+
+              </li>
+            </ul>
+            <a href="https://wa.me/919000266002?texE2%82%B94%2C999.%20Can%20we%20talk?" class="btn-plan cyan-btn"
+              target="_blank" rel="noopener noreferrer" aria-label="Get Starter plan for 4999 rupees">
+              💬 Get Started
+            </a>
+          </article>
+
+          <!-- STANDARD (popular) -->
+          <article class="pricing-card popular reveal" role="listitem" aria-label="Standard plan, most popular">
+            <div class="popular-badge" aria-label="Most popular plan">
+              ⭐ Most Popular
+            </div>
+            <div class="plan-name">Standard</div>
+            <div class="plan-price orange">
+              <span class="currency">₹</span>8,999
+            </div>
+            <div class="plan-billing">One-time payment</div>
+            <div class="plan-divider"></div>
+            <p style="
+                  font-size: 13px;
+                  color: var(--text2);
+                  margin-bottom: 20px;
+                ">
+              Best for growing businesses that want a professional look &amp;
+              more features.
+            </p>
+            <ul class="plan-features" role="list">
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Up to 5 Pages
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Mobile
+                Responsive Design
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> WhatsApp
+                Contact Button
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Google Maps
+                Integration
+              </li>
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Contact Form
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Basic Logo
+                Design
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Social Media
+                Links
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> 1 Months Free
+                Support
+              </li>
+            </ul>
+            <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%27m%20interested%20in%20the%20Standard%20plan%20for%20%E2%82%B98%2C999.%20Can%20we%20talk?"
+              class="btn-plan grad-btn" target="_blank" rel="noopener noreferrer"
+              aria-label="Get Standard plan for 8999 rupees">
+              💬 Get Standard
+            </a>
+          </article>
+
+          <!-- PREMIUM -->
+          <article class="pricing-card reveal" role="listitem" aria-label="Premium plan">
+            <div class="plan-name">Premium</div>
+            <div class="plan-price purple">
+              <span class="currency">₹</span>14,999
+            </div>
+            <div class="plan-billing">One-time payment</div>
+            <div class="plan-divider"></div>
+            <p style="
+                  font-size: 13px;
+                  color: var(--text2);
+                  margin-bottom: 20px;
+                ">
+              For businesses serious about growth — fully featured websites and e-commerce websites
+            </p>
+            <ul class="plan-features" role="list">
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Priority
+                Support
+              </li>
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Unlimited
+                Pages
+              </li>
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Mobile
+                Responsive Design
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> WhatsApp
+                Contact Button
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Google Maps
+                Integration
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Full SEO + blog
+
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Online Store
+                / Payments
+              </li>
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> Logo + Brand
+                Identity
+              </li>
+              <!-- <li class="plan-feature">
+                  <span class="check" aria-hidden="true">✅</span> Analytics
+                  Dashboard
+                </li> -->
+
+
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> GSAP advanced animations
+
+              </li>
+
+              <li class="plan-feature">
+                <span class="check" aria-hidden="true">✅</span> 2 Months Free
+                Support
+              </li>
+
+            </ul>
+            <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%27m%20interested%20in%20the%20Premium%20plan%20for%20%E2%82%B914%2C999.%20Can%20we%20talk?"
+              class="btn-plan grad-btn " target="_blank" rel="noopener noreferrer"
+              aria-label="Get Premium plan for 14999 rupees">
+              💬 Get Premium
+            </a>
+          </article>
+        </div>
+
+        <!-- Custom CTA -->
+        <div style="text-align: center; margin-top: 40px" class="reveal">
+          <p style="color: var(--text2); font-size: 15px; margin-bottom: 16px">
+            Not sure which plan fits? Let's talk — I'll recommend the best
+            option for your business. 🙂
+          </p>
+          <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%27m%20not%20sure%20which%20plan%20to%20choose.%20Can%20you%20help?"
+            class="btn-primary" target="_blank" rel="noopener noreferrer">
+            💬 Free Consultation on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         PORTFOLIO / WORK
+    ═════════════════════════════════════════════ -->
+    <section id="work" class="section-pad" aria-label="Portfolio work samples">
+      <div class="container">
+        <div class="badge">Portfolio</div>
+        <h2 class="section-title reveal">
+          Recent <span class="highlight">Projects</span>
+        </h2>
+        <p class="section-sub reveal">
+          Real websites built for real businesses in and around Karimnagar,
+          Telangana.
+        </p>
+<!-- projects list -->
+        <div class="work-grid" role="list">
+
+
+          <!-- beauty parlour  -->
+          <a href="https://4cbutpe01e.ailandingpage.ai/">
+
+
+            <article class="work-card reveal" role="listitem">
+
+              <div class="work-img" aria-label="Karimnagar Saloon/beauty parlour website preview">
+
+                <img src="./images/salon.bmp" alt="">
+
+              </div>
+              <div class="work-body">
+
+                <div class="work-type">Beauty parlour Website</div>
+                <h3>Beauty parlour &amp; Saloon</h3>
+                <p>Elegant beauty parlour website to showcase services, pricing, and makeup portfolio.  
+Mobile friendly design with appointment booking and contact details for easy client visits.</p>
+
+              </div>
+            </article>
+
+          </a>
+
+
+
+          <!-- salon website -->
+
+
+          <a href="https://karimnagar-beauty-saloon.netlify.app/">
+
+            <article class="work-card reveal" role="listitem">
+              <div class="work-img" aria-label="Textile shop website preview">
+                <img src="./images/saloon.bmp" alt="">
+              </div>
+              <div class="work-body">
+                <div class="work-type">Saloon Website karimnagar</div>
+                <h3> Saloon website karimnagar</h3>
+             <p>Modern salon website to showcase beauty services, pricing, and stylist profiles.  
+Mobile friendly design with booking form and contact details for quick appointments.</p>
+
+              </div>
+            </article>
+
+          </a>
+
+
+
+
+          <!-- restaurant website -->
+
+          <a href="https://karimnagar-kitchen-craft.lovable.app/">
+
+            <article class="work-card reveal" role="listitem">
+              <div class="work-img" aria-label="Tutoring website preview">
+                <img src="./images/restaurent2.bmp" alt="">
+              </div>
+              <div class="work-body">
+                <div class="work-type">Restaurant Website</div>
+                <h3>spice garden karimnagar</h3>
+            <p>Modern gym website to showcase training programs, facilities, and membership plans.  
+Mobile friendly design with trainer profiles and contact form for easy sign-ups.</p>
+
+              </div>
+            </article>
+          </a>
+
+
+
+          <!-- gym website -->
+
+          <a href="https://zp7hlaxe0k.ailandingpage.ai">
+
+            <article class="work-card reveal" role="listitem">
+              <div class="work-img" aria-label="Dr. Reddy Clinic website preview">
+                <img src="./images/gym_site.bmp" alt="">
+              </div>
+              <div class="work-body">
+                <div class="work-type">gym wellness
+                  &amp; fitness Website</div>
+                <h3> 5 star &star; gym karimnagar</h3>
+                <p>
+                  A professional gym and wellness website with membership booking, trainer
+                  profile, timings, and local SEO for Karimnagar area.
+                </p>
+              </div>
+            </article>
+
+          </a>
+
+
+
+
+          <!-- doctor/ clinic -->
+
+          <a href="https://lovable.dev/projects/4b2e9023-363a-45da-9a0b-5360fe44810c">
+
+            <article class="work-card reveal" role="listitem">
+              <div class="work-img" aria-label="Dr. Reddy Clinic website preview">
+                <img src="./images/doctor.bmp" alt="">
+              </div>
+              <div class="work-body">
+                <div class="work-type">Healthcare Website</div>
+                <h3>Dr. Reddy's Family Clinic</h3>
+            <p>Professional clinic website with doctor profile, services, and patient information.  
+Mobile friendly design with appointment booking and contact details for easy patient access.</p>
+
+              </div>
+            </article>
+
+          </a>
+
+
+
+
+
+
+
+
+
+
+          <!-- real estate website -->
+
+
+          <a href="https://realestatekarimnagar.netlify.app/">
+            <article class="work-card reveal" role="listitem">
+              <div class="work-img" aria-label="Textile shop website preview">
+                <img src="./images/real estate.bmp" alt="">
+              </div>
+              <div class="work-body">
+                <div class="work-type">Real estate developers</div>
+                <h3> Real Estate Develper's website</h3>
+               <p>Modern real estate website designed to showcase properties with clean listings and clear details.  
+Mobile friendly layout with inquiry form to help buyers connect with agents quickly.</p>
+
+              </div>
+            </article>
+
+          </a>
+
+
+
+          <a
+            href="https://preview--knrphoto.lovable.app/?__lovable_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiWVNpRGZnd2V0cE11TDlTUWFFVGV2cXdmejFRMiIsInByb2plY3RfaWQiOiJlMzJmZTE0Mi1lNTdhLTQ0YWItYjI2MS03OGQ2YWVjNWI2YzMiLCJhY2Nlc3NfdHlwZSI6InByb2plY3QiLCJpc3MiOiJsb3ZhYmxlLWFwaSIsInN1YiI6ImUzMmZlMTQyLWU1N2EtNDRhYi1iMjYxLTc4ZDZhZWM1YjZjMyIsImF1ZCI6WyJsb3ZhYmxlLWFwcCJdLCJleHAiOjE3NzM0MzA5ODMsIm5iZiI6MTc3MjgyNjE4MywiaWF0IjoxNzcyODI2MTgzfQ.ncgwFkVLwaEJEOuDFsgNswpF6WZP-rG-O3z-kxUOVep1POu8jYA4RTRCQggjbi7dR9GEjoy64j4dvo3MyrylIkbkkhkFzr1J4tRLdw0Ty9N6dfGLihX0pHaZgvCNiNKg3axxyAl8PZP-YDFVNl3qsujiLvfQijh1-GKx4NAobyCno6FvqE_OqRoI7qo-uEcxFaix2EyTDRG1PdkpDmHtUwM5qKuPvkBOzzttd82GxPRyKkE_0XnTgHOMS2lvhiQYltvBB2R-I7N0hter4i9qA4yY6U_lYlZSNh8GuHzSHKM7TnITluXaOdwyUO3UfHHm98eC-IV9a9iX3M7n02ZzDdFu4JI0d4mf90bhGV4WmgLujCyz-unPMp7kCK5r0IpFNx7GlP65Vf20v6Rg4MWObhNL_M1gGuq-rPum8GZWvjvyKIAhhaZ__KP-Qq0wXUTNX_yWfhaTC77HwjulIwAna4TJCS2L3Ym37cVKR5Esl28kGcjyIvkUSyogc1zgIXGqqoai16RwTyJdy5mJdcmsrv520RX5q9Auy2w583R_Cnm66sQc4Q0VWefNcCprCjRI2BDVInX_-dxg79-kTMa7gIxRnlhGQo4AHJeDp0VqJMjxD7u0Wiw-Kcdh6M19uo2jVMpDJwwCAg6ufSSLyqk386Fyjzmv68W0ylgRScbUf6Y">
+
+            <article class="work-card reveal" role="listitem">
+              <div class="work-img" aria-label="Textile shop website preview">
+                <img src="./images/photo.bmp" alt="">
+              </div>
+              <div class="work-body">
+                <div class="work-type">Photography</div>
+                <h3>Photographer's portfolio website</h3>
+             <p>Clean photographer portfolio website to showcase photos with a modern gallery layout.  
+Fast loading pages with smooth animations for a strong visual experience.  
+Includes service details and contact form to help clients book shoots easily.</p>
+
+              </div>
+            </article>
+
+          </a>
+
+
+
+
+          <a href="https://natu-chicken-farm.netlify.app/">
+          <article class="work-card reveal" role="listitem">
+            <div class="work-img" aria-label="Textile shop website preview">
+              <img src="./images/natu-kodi.bmp" alt="">
+            </div>
+            <div class="work-body">
+              <div class="work-type">Naatu Chicken</div>
+              <h3>naatu kodi farm website</h3>
+             
+            <p>Naatu Kodi chicken farm website to showcase farm grown country chicken and fresh supply details.  
+Mobile friendly design with product information and contact options for easy customer orders.</p>
+
+            
+            </div>
+          </article>
+
+          </a>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         TESTIMONIALS
+    ═════════════════════════════════════════════ -->
+    <section id="testimonials" class="section-pad" aria-label="Client testimonials">
+      <div class="container">
+        <div class="badge">Reviews</div>
+        <h2 class="section-title reveal">
+          What My Clients <span class="highlight">Say</span>
+        </h2>
+        <p class="section-sub reveal">
+          Trusted by small business owners across Karimnagar and Telangana.
+        </p>
+
+        <div class="testi-grid" role="list">
+          <article class="testi-card reveal" role="listitem">
+            <div class="stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>
+              "Dywa understood my bakery business perfectly. The website he
+              made gets us orders on WhatsApp every day! Very affordable and
+              he met me at my shop. Highly recommended."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-av" aria-hidden="true">🧑</div>
+              <div>
+                <div class="testi-name">Suresh Kumar</div>
+                <div class="testi-biz">Karimnagar Sweets &amp; Bakery</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card reveal" role="listitem">
+            <div class="stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>
+              "I was spending a lot on Google Ads but no website. Dywa made a
+              proper clinic website and now patients find us on Google. The
+              Standard package was exactly what I needed."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-av" aria-hidden="true">👨‍⚕️</div>
+              <div>
+                <div class="testi-name">Dr. Srinivas Reddy</div>
+                <div class="testi-biz">Family Clinic, Karimnagar</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card reveal" role="listitem">
+            <div class="stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>
+              "Best investment I made. The website looks modern and my
+              students' parents find our coaching centre easily on Google.
+              Dywa is very responsive and helpful."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-av" aria-hidden="true">👩‍🏫</div>
+              <div>
+                <div class="testi-name">Padma Rao</div>
+                <div class="testi-biz">Excel Coaching Centre, Karimnagar</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card reveal" role="listitem">
+            <div class="stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote>
+              "Dywa built our textiles website and also helped us add
+              products. Customers from other cities are now ordering from us
+              on WhatsApp. Very professional work at low cost."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-av" aria-hidden="true">👳</div>
+              <div>
+                <div class="testi-name">Ramesh Naik</div>
+                <div class="testi-biz">Lakshmi Textiles, Karimnagar</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         CONTACT SECTION
+    ═════════════════════════════════════════════ -->
+    <section id="contact" class="section-pad" aria-label="Contact information">
+      <div class="contact-blob contact-blob-1" aria-hidden="true"></div>
+      <div class="contact-blob contact-blob-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="badge">Contact</div>
+        <h2 class="section-title reveal">
+          Let's <span class="highlight">Talk Business</span>
+        </h2>
+        <p class="section-sub reveal">
+          Based in Karimnagar — available for meetings, calls, and WhatsApp.
+          Reach out and I'll respond within 2 hours.
+        </p>
+
+        <div class="contact-grid" style="margin-top: 48px">
+          <div style="display: flex; flex-direction: column; gap: 16px">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919000266002?text=Hi%20Dywa%2C%20I%20need%20a%20website%20for%20my%20business!"
+              class="contact-item reveal" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+              <div class="contact-icon wa" aria-hidden="true">💬</div>
+              <div>
+                <div class="contact-label">WhatsApp (Preferred)</div>
+                <div class="contact-val">+91 90002 66002</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+919000266002" class="contact-item reveal" aria-label="Call phone number">
+              <div class="contact-icon ph" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact-label">Phone / Call</div>
+                <div class="contact-val">+91 90002 66002</div>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:battudvp@gmail.com" class="contact-item reveal" aria-label="Send email">
+              <div class="contact-icon em" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-val">dywa@dvpdesign.in</div>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-item reveal" role="contentinfo" aria-label="Office location">
+              <div class="contact-icon loc" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Karimnagar, Telangana — 505001</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="reveal-right">
+            <div class="map-placeholder" role="img" aria-label="Office location in Karimnagar">
+              <div class="map-pin" aria-hidden="true">📍</div>
+              <h3>Karimnagar, Telangana</h3>
+              <p>
+                I'm available for in-person meetings across Karimnagar city.
+              </p>
+              <a href="https://maps.google.com/?q=Karimnagar,Telangana" class="btn-ghost" target="_blank"
+                rel="noopener noreferrer" style="margin-top: 8px; font-size: 14px; padding: 10px 22px"
+                aria-label="Open Karimnagar on Google Maps">
+                📌 Open in Google Maps
+              </a>
+            </div>
+
+            <!-- Working hours -->
+            <div style="
+                  background: var(--card);
+                  border: 1px solid var(--border);
+                  border-radius: 14px;
+                  padding: 20px 24px;
+                  margin-top: 16px;
+                ">
+              <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 14px">
+                🕐 Working Hours
+              </h3>
+              <div style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    font-size: 14px;
+                    color: var(--text2);
+                  ">
+                <div style="display: flex; justify-content: space-between">
+                  <span>Mon – Fri</span><span style="color: var(--c4); font-weight: 600">10 AM – 6 PM</span>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                  <span>Saturday</span><span style="color: var(--c4); font-weight: 600">12 AM – 3 PM</span>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                  <span>Sunday</span><span style="color: var(--c1); font-weight: 600">WhatsApp Only</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- /main -->
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ═════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="logo" aria-label="DVP Design Home">
+            <span class="dvp">dvp</span><span class="design"> designs</span>
+          </a>
+          <p>
+            Professional website development for small businesses in
+            Karimnagar, Telangana. Helping local businesses grow online since
+            2025.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="Services links">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="#services">Business Websites</a></li>
+            <li><a href="#services">Online Stores</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Local SEO</a></li>
+            <li><a href="#services">Maintenance</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Navigation links">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#why">Why Local?</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li>
+              <a href="https://wa.me/919000266002" target="_blank" rel="noopener noreferrer">
+                💬 WhatsApp
+              </a>
+            </li>
+            <li><a href="tel:+919000266002">📞 +91 90002 66002</a></li>
+            <li>
+              <a href="mailto:battudvp@gmail.com">✉️ dywa@dvpdesign.in</a>
+            </li>
+            <li>
+              <span style="color: var(--text)">📍 Karimnagar, TG</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 <a href="#hero">DVP <span class="design">designs</span></a> — Dywa Varaprasad. All rights
+          reserved.</span>
+        <span>Made with ❤️ in <strong>Karimnagar, Telangana</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════
+     JAVASCRIPT — Interactions & GSAP Animations
+═════════════════════════════════════════════════ -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
